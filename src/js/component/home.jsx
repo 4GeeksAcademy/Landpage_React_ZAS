@@ -16,28 +16,30 @@ const Home = () => {
 	return (
 		<div className="container">
 			<Navbar />
-			<div className="container bg-light rounded">
+			<div className="jumbo container rounded bg-light">
 				<Jumbotron
 					text='TouchDesigner is a node-based visual programming language for real-time interactive multimedia content. Developed by the Toronto-based company Derivative, it is often used by artists, programmers, creative coders, software designers, and performers to create performances, installations, and fixed media works.' />
 			</div>
+
+			<div className="container text-center my-4 works"></div>
 			<div className="container d-flex justify-content-center">
 				<div className="row d-flex grid gap-5">
-					{DatosCarta.map(dato => (
-						<Card
-							key = {dato.titulo}
-							ImgSrc={dato.imagen}
-							Titulo={dato.titulo}
-							description={dato.descripcion}
+					{DatosCarta.map(data => (
+						<Card 
+							key = {data.id}
+							ImgSrc={data.imagen}
+							Titulo={data.titulo}
+							description={data.descripcion}
 						/>
 					))
 					}
 				</div>
 				
 			</div>
-			<footer className="container" >
-					<div className="d-flex justify-content-center bg-black text-white my-5 py-3 rounded-4">
+			<footer >
+					<div className="footer col-11 m-auto d-flex justify-content-center bg-black text-white my-5 py-1 rounded-2">
 
-						<p class="footer m-auto">Made by Zas with Love ♥ </p>
+						<p class="m-2">Made by Zas with Love ♥ </p>
 					</div>
 				</footer>
 		</div>

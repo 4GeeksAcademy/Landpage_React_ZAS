@@ -8,9 +8,9 @@ export default function Card({ImgSrc, Titulo, description}) {
 
     return (
 
-        <div className="card" style={{ width: "18rem" }}>
-            <img src={ImgSrc} className="card-img-top" alt="..." />
-            <div className="card-body">
+        <div className="card bg-light border-light" style={{ width: "18rem" }}>
+            <img src={ImgSrc} className="card-img-top m-auto" style={{objectFit: "cover"}} />
+            <div className="card-body ">
                 <h5 className="card-title">{Titulo}</h5>
                 <p className="card-text">{description}</p>
                 <a href="#" className="btn btn-dark">Find out more</a>

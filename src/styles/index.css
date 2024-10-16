@@ -10,3 +10,18 @@
     import 'relative/path/to/stylesheet.scss';
 
 */
+
+
+
+a {
+    color:black;
+}
+a:hover{
+    color:dimgray;
+}
+
+.footer {
+    background: linear-gradient(to right,rgb(255, 255, 255), rgb(179, 179, 179), rgb(0, 0, 0), rgb(165, 165, 165), white);
+}
+
+
